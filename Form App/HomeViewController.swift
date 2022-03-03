@@ -13,7 +13,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var toto = iFormTextFieldItem(placeholder: "Placeholder", text: "Texte", type: .email)
+        let textField = iFormTextFieldItem(placeholder: "Placeholder", text: "Texte", type: .email)
+        
+        self.view.addSubview(textField.addView())
         
     }
 
