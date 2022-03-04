@@ -13,9 +13,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let textField = iFormTextFieldItem(placeholder: "Placeholder", text: "Texte", type: .email)
-        
-        self.view.addSubview(textField.addView())
+        let textField = iFormTextFieldItem(placeholder: "Placeholder", text: "Texte", contentType: .password)
+        textField.setKeyboardType(.phone)
+        textField.setConstraints(.init(300, 300))
+        textField.setBackgroundColor(.blue)
+        self.view.addSubview(textField.display())
         
     }
 
