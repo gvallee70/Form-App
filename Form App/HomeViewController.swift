@@ -10,15 +10,21 @@ import iForm
 
 class HomeViewController: UIViewController {
 
+    var form: iForm = iForm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let textField = iFormTextFieldItem(placeholder: "Placeholder", text: "Texte", contentType: .password)
-        textField.setKeyboardType(.phone)
-        textField.setConstraints(.init(300, 300))
-        textField.setBackgroundColor(.blue)
-        self.view.addSubview(textField.display())
-        
+//        self.view.addSubview(form.addSignInForm())
+//        let formular = form.addSignInForm()
+//        
+//        let horizontalConstraint = NSLayoutConstraint(item: formular, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
+//        let verticalConstraint = NSLayoutConstraint(item: formular, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0)
+//        let widthConstraint = NSLayoutConstraint(item: formular, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400)
+//        let heightConstraint = NSLayoutConstraint(item: formular, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: 400)
+//        
+//        self.view.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
+//        
     }
 
 
