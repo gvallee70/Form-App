@@ -15,15 +15,22 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+//        let customTextField = form.initTextField(placeholder: "Mot de passe")
+//        customTextField.display(on: self.view)
+        
         var formular : UIView = UIView()
-        formular = form.addSignInForm(parentView: view, actionToPerform : UIAction() { action in
+        
+        //Initialize sign-in form
+        formular = form.initSignInForm(on: self.view, actionToPerform : UIAction() { action in
             let textFieldsValues = self.form.getTextFieldsValues(values: self.form.getAllTextFields(from: formular))
             
             print(textFieldsValues)
         })
     
         self.view.addSubview(formular)
-
+        
+        //Constraints of self.view
         formular.translatesAutoresizingMaskIntoConstraints = false
         let horizontalConstraint = NSLayoutConstraint(item: formular, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: self.view, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1, constant: 0)
         
