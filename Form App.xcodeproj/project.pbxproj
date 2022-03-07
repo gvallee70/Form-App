@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2E90CA27D64019006E1104 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E90C827D64018006E1104 /* SignInViewController.swift */; };
+		BE2E90CB27D64019006E1104 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E90C927D64018006E1104 /* SignInViewController.xib */; };
+		BE2E90CF27D641EC006E1104 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E90CD27D641EC006E1104 /* DetailsViewController.swift */; };
+		BE2E90D027D641EC006E1104 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E90CE27D641EC006E1104 /* DetailsViewController.xib */; };
 		BEFF897227CE939200DC6AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF897127CE939200DC6AF9 /* AppDelegate.swift */; };
 		BEFF897B27CE939400DC6AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFF897A27CE939400DC6AF9 /* Assets.xcassets */; };
 		BEFF897E27CE939400DC6AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFF897C27CE939400DC6AF9 /* LaunchScreen.storyboard */; };
@@ -62,6 +66,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE2E90C827D64018006E1104 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BE2E90C927D64018006E1104 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		BE2E90CD27D641EC006E1104 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		BE2E90CE27D641EC006E1104 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		BEFF896E27CE939200DC6AF9 /* Form App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Form App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFF897127CE939200DC6AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEFF897A27CE939400DC6AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +93,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE2E90C227D63FE3006E1104 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BEFF97FA27CE95A200DC6AF9 /* HomeViewController.swift */,
+				BEFF97FB27CE95A200DC6AF9 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BE2E90C727D63FEC006E1104 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E90C827D64018006E1104 /* SignInViewController.swift */,
+				BE2E90C927D64018006E1104 /* SignInViewController.xib */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		BE2E90CC27D641DE006E1104 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				BE2E90CD27D641EC006E1104 /* DetailsViewController.swift */,
+				BE2E90CE27D641EC006E1104 /* DetailsViewController.xib */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		BEFF896527CE939200DC6AF9 = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +140,13 @@
 		BEFF897027CE939200DC6AF9 /* Form App */ = {
 			isa = PBXGroup;
 			children = (
+				BE2E90CC27D641DE006E1104 /* Details */,
+				BE2E90C727D63FEC006E1104 /* Sign In */,
+				BE2E90C227D63FE3006E1104 /* Home */,
 				BEFF897127CE939200DC6AF9 /* AppDelegate.swift */,
 				BEFF897A27CE939400DC6AF9 /* Assets.xcassets */,
 				BEFF897C27CE939400DC6AF9 /* LaunchScreen.storyboard */,
 				BEFF897F27CE939400DC6AF9 /* Info.plist */,
-				BEFF97FA27CE95A200DC6AF9 /* HomeViewController.swift */,
-				BEFF97FB27CE95A200DC6AF9 /* HomeViewController.xib */,
 			);
 			path = "Form App";
 			sourceTree = "<group>";
@@ -9531,7 +9567,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2E90CB27D64019006E1104 /* SignInViewController.xib in Resources */,
 				BEFF897E27CE939400DC6AF9 /* LaunchScreen.storyboard in Resources */,
+				BE2E90D027D641EC006E1104 /* DetailsViewController.xib in Resources */,
 				BEFF897B27CE939400DC6AF9 /* Assets.xcassets in Resources */,
 				BEFF97FD27CE95A200DC6AF9 /* HomeViewController.xib in Resources */,
 			);
@@ -9546,6 +9584,8 @@
 			files = (
 				BEFF897227CE939200DC6AF9 /* AppDelegate.swift in Sources */,
 				BEFF97FC27CE95A200DC6AF9 /* HomeViewController.swift in Sources */,
+				BE2E90CA27D64019006E1104 /* SignInViewController.swift in Sources */,
+				BE2E90CF27D641EC006E1104 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,13 +21,6 @@
             <color key="backgroundColor" systemColor="systemIndigoColor"/>
             <point key="canvasLocation" x="139" y="100"/>
         </view>
-        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="lF4-pS-SG7" customClass="iFormTextFieldItem" customModule="iForm">
-            <rect key="frame" x="0.0" y="0.0" width="97" height="34"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-            <textInputTraits key="textInputTraits"/>
-            <point key="canvasLocation" x="-331" y="11"/>
-        </textField>
     </objects>
     <resources>
         <systemColor name="systemIndigoColor">
