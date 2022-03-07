@@ -14,8 +14,14 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let formular = form.addSignInForm(parentView: view)
+        
+        var formular : UIView = UIView()
+        formular = form.addSignInForm(parentView: view, actionToPerform : UIAction() { action in
+            let textFieldsValues = self.form.getTextFieldsValues(values: self.form.getAllTextFields(from: formular))
+            
+            print(textFieldsValues)
+        })
+    
         self.view.addSubview(formular)
 
         formular.translatesAutoresizingMaskIntoConstraints = false
@@ -30,17 +36,8 @@ class HomeViewController: UIViewController {
 
         self.view.addConstraints([horizontalConstraint, verticalConstraint,widthConstraint,heightConstraint])
 
+        
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
