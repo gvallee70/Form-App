@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let button = form.initButton(text: "Sign-in form", buttonStyle: UIButtonStyle(inputRadius: 5, backgroundColor: .red, textColor: .blue, tintColor: .blue, borderColor: .red, borderWidth: 5), action: UIAction(){ _ in
+        let button = form.initButton(text: "Sign-in form", buttonStyle: UIButtonStyle(inputRadius: 5, backgroundColor: .blue, textColor: .white, tintColor: .blue, borderColor: .white, borderWidth: 5), action: UIAction(){ _ in
             self.navigationController?.pushViewController(SignInViewController(), animated: true)
         })
         
