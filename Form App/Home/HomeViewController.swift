@@ -15,11 +15,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let button = form.initButton(text: "Sign-In form", textColor: .black, backgroundColor: .red, constraints: Constraints(horizontal: 0, vertical: -60, width: 200, height: 100), action: UIAction(){ _ in
+        let button = form.initButton(text: "Sign-In form", textColor: .black, backgroundColor: .red, action: UIAction(){ _ in
             self.navigationController?.pushViewController(SignInViewController(), animated: true)
         })
         
-        button.display(on: self.view)
+        button.display(on: self.view, withConstraints: Constraints(horizontal: 0, vertical: -60, width: 200, height: 100))
         
     }
 }

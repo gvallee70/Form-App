@@ -34,7 +34,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         
         //if you want to personalize an element of a preset form
         formular.emailTextField.setBackgroundColor(.red)
-
+        formular.signInButton.setBackgroundColor(.red)
+        
         form.display(formular, on: self.view, withConstraints: Constraints(horizontal: 0, vertical: -250, width: 0, height: 50))
 
 }
