@@ -11,13 +11,12 @@
 		BE2E90CB27D64019006E1104 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E90C927D64018006E1104 /* SignInViewController.xib */; };
 		BE2E90CF27D641EC006E1104 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E90CD27D641EC006E1104 /* DetailsViewController.swift */; };
 		BE2E90D027D641EC006E1104 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E90CE27D641EC006E1104 /* DetailsViewController.xib */; };
+		BE8F937727D6F883002D6EDF /* iForm in Frameworks */ = {isa = PBXBuildFile; productRef = BE8F937627D6F883002D6EDF /* iForm */; };
 		BEFF897227CE939200DC6AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF897127CE939200DC6AF9 /* AppDelegate.swift */; };
 		BEFF897B27CE939400DC6AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFF897A27CE939400DC6AF9 /* Assets.xcassets */; };
 		BEFF897E27CE939400DC6AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFF897C27CE939400DC6AF9 /* LaunchScreen.storyboard */; };
 		BEFF97FC27CE95A200DC6AF9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF97FA27CE95A200DC6AF9 /* HomeViewController.swift */; };
 		BEFF97FD27CE95A200DC6AF9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFF97FB27CE95A200DC6AF9 /* HomeViewController.xib */; };
-		BEFF980727CE97F700DC6AF9 /* iForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEFF980427CE971000DC6AF9 /* iForm.framework */; };
-		BEFF980827CE97F700DC6AF9 /* iForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEFF980427CE971000DC6AF9 /* iForm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,20 +50,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		BEFF980927CE97F700DC6AF9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				BEFF980827CE97F700DC6AF9 /* iForm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		BE2E90C827D64018006E1104 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BE2E90C927D64018006E1104 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
@@ -86,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFF980727CE97F700DC6AF9 /* iForm.framework in Frameworks */,
+				BE8F937727D6F883002D6EDF /* iForm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9477,13 +9462,15 @@
 				BEFF896A27CE939200DC6AF9 /* Sources */,
 				BEFF896B27CE939200DC6AF9 /* Frameworks */,
 				BEFF896C27CE939200DC6AF9 /* Resources */,
-				BEFF980927CE97F700DC6AF9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Form App";
+			packageProductDependencies = (
+				BE8F937627D6F883002D6EDF /* iForm */,
+			);
 			productName = "Form App";
 			productReference = BEFF896E27CE939200DC6AF9 /* Form App.app */;
 			productType = "com.apple.product-type.application";
@@ -9512,6 +9499,9 @@
 				Base,
 			);
 			mainGroup = BEFF896527CE939200DC6AF9;
+			packageReferences = (
+				BE8F936E27D6F623002D6EDF /* XCRemoteSwiftPackageReference "iForm" */,
+			);
 			productRefGroup = BEFF896F27CE939200DC6AF9 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -9734,6 +9724,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -9762,6 +9753,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -9797,6 +9789,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE8F936E27D6F623002D6EDF /* XCRemoteSwiftPackageReference "iForm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gvallee70/iForm";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE8F937627D6F883002D6EDF /* iForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE8F936E27D6F623002D6EDF /* XCRemoteSwiftPackageReference "iForm" */;
+			productName = iForm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEFF896627CE939200DC6AF9 /* Project object */;
 }
